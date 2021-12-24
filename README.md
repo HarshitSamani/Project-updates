@@ -35,6 +35,6 @@ Test accuracy = 69.56
 In these simulations, Negative edges are retained, and aggregated features were not normalized by degree of nodes. Again CE loss was validated, used softmax layer, evaluated the model at the early stopping checkpoint.
 
 Best performance:\
-Train accuracy = 91.60\
-Validation accuracy = 77.38\
-Test accuracy = 69.56
+Train accuracy = 70.35\
+Validation accuracy = 76.36\
+Test accuracy = 62.72
