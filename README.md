@@ -7,7 +7,7 @@ These models are evaluated at best_validation checkpoint + 20 epochs.
 Best performance:\
 Train accuracy = 88.75\
 Validation accuracy = 81.82\
-Test accuracy = 68.73\
+Test accuracy = 68.73
 
 
 ## Weighted Cross-entropy loss
@@ -19,6 +19,22 @@ While training, Used Weighted cross entropy as loss function with weight = CN_co
 Best performance:\
 Train accuracy = 94.23\
 Validation accuracy = 75.16\
-Test accuracy = 63.47\
+Test accuracy = 63.47
 
 
+## Cross-entropy loss validation
+I monitored validation loss instead of validation accuracy in these simulations. I used the softmax layer and evaluated the model at the early stopping checkpoint. 
+
+Best performance:\
+Train accuracy = 91.60\
+Validation accuracy = 77.38\
+Test accuracy = 69.56
+
+
+## Cross-entropy loss validation + Negative edge weights (Normalize = False)
+In these simulations, Negative edges are retained, and aggregated features were not normalized by degree of nodes. Again CE loss was validated, used softmax layer, evaluated the model at the early stopping checkpoint.
+
+Best performance:\
+Train accuracy = 91.60\
+Validation accuracy = 77.38\
+Test accuracy = 69.56
