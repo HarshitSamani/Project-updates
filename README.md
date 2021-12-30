@@ -38,3 +38,36 @@ Best performance:\
 Train accuracy = 70.35\
 Validation accuracy = 76.36\
 Test accuracy = 62.72
+
+
+## Validation with Weighted CE loss
+In this approach, I have used whole dataset at a time instead of taking samples from Majority class (CN cohort) to balance the class and also used weighted CE loss for validation.
+
+Best performance: \
+Train accuracy = 96.29\
+Validation accuracy = 73.05\
+Test accuracy = 66.25
+
+
+## Community detection + CE loss validated 
+Best performance: \
+Train accuracy = 86.96\
+Validation accuracy = 77.93\
+Test accuracy = 68.81
+
+
+## Trainable threshold + CE loss validated
+Best performance: \
+Train accuracy = 88.05\
+Validation accuracy = 77.53\
+Test accuracy = 68.15
+
+
+## Fixed threshold + F1-score validated (w/o early-stopping)
+In this approach, I used F1-score for validation, and run the experiment for 200 epochs without using early-stopping for creating checkpoints.
+
+Best performance: \
+Train accuracy / F1-score = 90.28 / 0.91 \
+Validation accuracy / F1-score = 77.94 / 0.77 \
+Test accuracy / F1-score = 63.61 / 0.64
+
