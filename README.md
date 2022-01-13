@@ -103,7 +103,7 @@ Validation accuracy / F1-score = 75.48 /0.83 \
 Test accuracy / F1-score = 67.74 / 0.76
 
 
-## Core-periphery structure [Jan 12, 2022]
+## Core-periphery structure [Jan 13, 2022]
 In these experiments, I have find the core-periphery structure from average correlation matrices using Ramboch's algorithm. All the core-core connections are retained, but noisy core-periphery and periphery-periphery connections are removed using corresponding thresholds.
 
 Best performance: \ 
@@ -112,7 +112,7 @@ Validation accuracy / F1-score = 77.64/0.84 \
 Test accuracy / F1-score = 69.44/0.77
 
 
-## Fixed_single_threshold + Weight decay regularization [Jan 12, 2022]
+## Fixed_single_threshold + Weight decay regularization [Jan 13, 2022]
 In these experiemnts, I have used weight decay regularization on baseline single threshold model.
 
 Best performance: \ 
@@ -120,7 +120,7 @@ Train accuracy / F1-score = 97.53 / 0.98 \
 Validation accuracy / F1-score = 74.94/0.82 \
 Test accuracy / F1-score = 67.76/0.76
 
-## Graph attention network (Single head) [Jan 12, 2022]
+## Graph attention network (Single head) [Jan 13, 2022]
 In these experiments, I have used standard Graph attention network model with single head attention.
 
 Best performance: \
