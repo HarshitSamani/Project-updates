@@ -50,6 +50,8 @@ Test accuracy = 66.25
 
 
 ## Community detection + CE loss validated [Dec 30, 2021]
+In this approach, I have used CE loss for validation with community structure in graph.
+
 Best performance: \
 Train accuracy = 86.96\
 Validation accuracy = 77.93\
@@ -57,6 +59,8 @@ Test accuracy = 68.81
 
 
 ## Trainable threshold + CE loss validated [Dec 30, 2021]
+In this approach, I have used modified GCN with trainble threshold and used CE loss for validation.
+
 Best performance: \
 Train accuracy = 88.05\
 Validation accuracy = 77.53\
@@ -73,6 +77,7 @@ Test accuracy / F1-score = 63.61 / 0.64
 
 
 ## Fixed threshold + F1-score validated + Minority class oversampled [Dec 30, 2021]
+In these experiments, I have used baseline GCN model, Oversampled the minority class and validated F1-score.
 
 Best performance: \
 Train accuracy / F1-score = 98.43/0.98 \
@@ -81,6 +86,7 @@ Test accuracy / F1-score = 68.3/0.76
 
 
 ## Fixed_Communtiy + F1-score validated + Minority class oversampled [Jan 06, 2022]
+In these experiments, I have used community structure based model, Oversampled the minority class and validated F1-score.
 
 Best performance: \
 Train accuracy / F1-score = 98.39/0.98 \
@@ -89,8 +95,35 @@ Test accuracy / F1-score = 69.11/0.78
 
 
 ## Fixed_single_threshold + SMOTE [Jan 06, 2022]
+In these experiments, I have used baseline GCN model, Oversampled the minority class using SMOTE technique and validated F1-score.
 
 Best performance: \
 Train accuracy / F1-score = 96.49 / 0.98 \
 Validation accuracy / F1-score = 75.48 /0.83 \
 Test accuracy / F1-score = 67.74 / 0.76
+
+
+## Core-periphery structure [Jan 12, 2022]
+In these experiments, I have find the core-periphery structure from average correlation matrices using Ramboch's algorithm. All the core-core connections are retained, but noisy core-periphery and periphery-periphery connections are removed using corresponding thresholds.
+
+Best performance: \ 
+Train accuracy / F1-score = 98.4/0.98 \
+Validation accuracy / F1-score = 77.64/0.84 \
+Test accuracy / F1-score = 69.44/0.77
+
+
+## Fixed_single_threshold + Weight decay regularization [Jan 12, 2022]
+In these experiemnts, I have used weight decay regularization on baseline single threshold model.
+
+Best performance: \ 
+Train accuracy / F1-score = 97.53 / 0.98 \
+Validation accuracy / F1-score = 74.94/0.82 \
+Test accuracy / F1-score = 67.76/0.76
+
+## Graph attention network (Single head) [Jan 12, 2022]
+In these experiments, I have used standard Graph attention network model with single head attention.
+
+Best performance: \
+Train accuracy / F1-score = 92.71 / 0.93 \
+Validation accuracy / F1-score = 74.19 / 0.82 \
+Test accuracy / F1-score = 69.29 / 0.78
