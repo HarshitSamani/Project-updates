@@ -127,3 +127,21 @@ Best performance: \
 Train accuracy / F1-score = 92.71 / 0.93 \
 Validation accuracy / F1-score = 74.19 / 0.82 \
 Test accuracy / F1-score = 69.29 / 0.78
+
+
+## Graph attention network (timeseries feature) [Jan 24, 2022]
+In these experiments, I have used standard Graph attention network model with single head attention. Instead of functional connectivity matrix as feature, we used parcelleted time series as feature.
+
+Best performance: \
+Train accuracy / F1-score = 89.71 / 0.91 \
+Validation accuracy / F1-score = 65.67 / 0.75 \
+Test accuracy / F1-score = 54.22 / 0.66
+
+
+## Signed GCN [Jan 24, 2022]
+In these experiments, I have used Signed GCN model. This model uses balance theory to aggrregate information of the positively linked neighbours and negatively linked neighbours seperately.
+
+Best performance: \
+Train accuracy / F1-score = 97.75 / 0.98 \
+Validation accuracy / F1-score = 78.42 / 0.85 \
+Test accuracy / F1-score = 71.88 / 0.79
