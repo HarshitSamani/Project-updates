@@ -145,3 +145,11 @@ Best performance: \
 Train accuracy / F1-score = 97.75 / 0.98 \
 Validation accuracy / F1-score = 78.42 / 0.85 \
 Test accuracy / F1-score = 71.88 / 0.79
+
+## Graph attention network (Sparse graph) [Jan 27, 2022]
+In previous experiments, we have used fully connected graph. Here, we retain edges with edge weights higher than thresholds.
+
+Best performance: \
+Train accuracy / F1-score = 79.16 / 0.85 \
+Validation accuracy / F1-score = 72.06 / 0.81 \
+Test accuracy / F1-score = 67.97/ 0.77
