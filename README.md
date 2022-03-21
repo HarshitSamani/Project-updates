@@ -153,3 +153,23 @@ Best performance: \
 Train accuracy / F1-score = 79.16 / 0.85 \
 Validation accuracy / F1-score = 72.06 / 0.81 \
 Test accuracy / F1-score = 67.97/ 0.77
+
+## Data augementation literature review [Feb 03, 2022]
+We tried various deep graph network architectures and found that most of them are overfitting. We previosly experimented with SMOTE technique and marginally improved val/test performances. However, Overfitting issue is not resolved completely. Reviewed recent literature related to Data augmentation for brain connectivity features.
+
+## Data augementation literature review [Feb 10, 2022]
+Found BrainNetGAN[https://arxiv.org/abs/2103.08494] useful for brain connectivity data augmentation purpose. Understood the methodology involving Wassestein GAN (WGAN), WGAN with Gradient penalty (an improved version) and BrainNetCNN, a specific architecutre designed for adjaceny matrices.
+
+## Vanilla GAN based approach [Feb 17, 2022]
+We decided to first start with simple GAN based approach. Experimented with various architectures of Generator and Discriminator in systematic manner.
+
+## WGAN for Data augmentation [Feb 24, 2022]
+Similar to Vanilla GAN, Experimented with various architectures of Generator and Discriminator in systematic manner. I didn't find any equillibrium point.
+
+## Results [March 03, 2022]
+Tried few more architectures, I was not able to find equillibrium point. I visulize the data generated from the trained GANs. 
+Samples generated using WGAN were not realistic, but samples generated using GANs were visually realistic.
+Further, I tested 200 samples using pre trianed GCN model. Average accuracy: 61.84% 
+
+## Implementation of BrainNetGAN [March 10, 2022 & March 17, 2022]
+GAN and WGAN used fully connected architectures with huge number of trainable parameters. BrainNetCNN architecture shares the parameters across the nodes to limit the number of trinable parameters and alongwith preserves the graph type of structure across the layers. We will to leverage this special architecture for our purpose.
